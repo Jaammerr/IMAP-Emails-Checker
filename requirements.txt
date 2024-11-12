@@ -1,0 +1,7 @@
+loguru~=0.7.2
+aiofiles~=24.1.0
+PyYAML~=6.0.2
+pydantic~=2.9.2
+better_proxy
+python_socks
+imap_tools

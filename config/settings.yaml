@@ -1,0 +1,22 @@
+# Application Configuration File
+# =============================
+
+# Core Settings
+# ------------
+threads: 10                    # Number of concurrent threads to run (minimum: 1)
+retry_limit: 3                 # Number of times to retry on failure (minimum: 1)
+
+
+# Email Provider IMAP Settings
+# --------------------------
+imap_settings:
+  # Common email providers and their IMAP servers
+  gmail.com: imap.gmail.com          # Google Mail
+  yahoo.com: imap.mail.yahoo.com     # Yahoo Mail
+  outlook.com: imap-mail.outlook.com  # Microsoft Outlook
+  hotmail.com: imap-mail.outlook.com  # Microsoft Hotmail
+  mail.ru: imap.mail.ru              # Mail.ru
+  rambler.ru: imap.rambler.ru        # Rambler
+  gmx.com: imap.gmx.com              # GMX Mail
+  gmx.net: imap.gmx.net             # GMX Germany
+  gmx.de: imap.gmx.net              # GMX Germany (alternate domain)
