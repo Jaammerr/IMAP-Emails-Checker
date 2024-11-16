@@ -21,7 +21,9 @@ class FileOperations:
         self.base_path.mkdir(exist_ok=True)
         for module_paths in self.module_paths.values():
             for path in module_paths.values():
-                path.touch(exist_ok=True)
+                if path.exists():
+                    path.unlink()
+                path.touch()
 
 
     async def export_result(self, result: OperationResult, module: ModuleType):
