@@ -5,3 +5,8 @@ pydantic~=2.9.2
 better_proxy
 python_socks
 imap_tools
+inquirer
+art
+urllib3
+rich
+httpx

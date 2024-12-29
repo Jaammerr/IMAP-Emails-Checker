@@ -3,20 +3,27 @@
 
 # Core Settings
 # ------------
-threads: 10                    # Number of concurrent threads to run (minimum: 1)
-retry_limit: 3                 # Number of times to retry on failure (minimum: 1)
+threads: 50                    # Number of concurrent threads to run (minimum: 1)
+retry_limit: 1                 # Number of times to retry on failure (minimum: 1)
+
+use_oauth: false   # Use OAuth2 (most used for outlook/hotmail) (true/false)
+use_proxy: false    # Use proxy while checking emails (true/false)
+
+
 
 
 # Email Provider IMAP Settings
 # --------------------------
 imap_settings:
   # Common email providers and their IMAP servers
-  gmail.com: imap.gmail.com          # Google Mail
-  yahoo.com: imap.mail.yahoo.com     # Yahoo Mail
-  outlook.com: imap-mail.outlook.com  # Microsoft Outlook
-  hotmail.com: imap-mail.outlook.com  # Microsoft Hotmail
+  gmail.com: imap.gmail.com          # Google
+  yahoo.com: imap.mail.yahoo.com     # Yahoo
   mail.ru: imap.mail.ru              # Mail.ru
   rambler.ru: imap.rambler.ru        # Rambler
-  gmx.com: imap.gmx.com              # GMX Mail
+  gmx.com: imap.gmx.com              # GMX
   gmx.net: imap.gmx.net             # GMX Germany
   gmx.de: imap.gmx.net              # GMX Germany (alternate domain)
+  mesiosemail.ru: imap.firstmail.ltd # FirstMail
+  superasemail.ru: imap.firstmail.ltd # FirstMail
+  outlook.com: imap-mail.outlook.com # Outlook.com
+  hotmail.com: imap-mail.outlook.com # Hotmail
